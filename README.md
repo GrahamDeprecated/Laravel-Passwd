@@ -18,7 +18,7 @@ Copyright © [Graham Campbell](https://github.com/GrahamCampbell) 2013
 
 ## What Is Laravel Passwd?
 
-Passwd Is A Simple Password Generator For [Laravel 4](http://laravel.com).  
+Laravel Passwd Is A Simple Password Generator For [Laravel 4](http://laravel.com).  
 
 * Laravel Passwd was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell).  
 * Laravel Passwd uses [Travis CI](https://travis-ci.org/GrahamCampbell/Laravel-Passwd) to run tests to check if it's working as it should.  
