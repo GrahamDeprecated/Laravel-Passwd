@@ -2,11 +2,11 @@ Laravel Passwd
 ==============
 
 
-[![Latest Stable Version](https://poser.pugx.org/graham-campbell/laravel-passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/laravel-passwd)
+[![Latest Stable Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=master)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
-[![Latest Unstable Version](https://poser.pugx.org/graham-campbell/laravel-passwd/v/unstable.png)](https://packagist.org/packages/graham-campbell/laravel-passwd)
+[![Latest Unstable Version](https://poser.pugx.org/graham-campbell/passwd/v/unstable.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=develop)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
-[![Total Downloads](https://poser.pugx.org/graham-campbell/laravel-passwd/downloads.png)](https://packagist.org/packages/graham-campbell/laravel-passwd)
+[![Total Downloads](https://poser.pugx.org/graham-campbell/passwd/downloads.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd.png)](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd)
 
 
@@ -40,7 +40,7 @@ Please check the system requirements before installing Laravel Passwd.
 
 To get the latest version of Passwd, simply require it in your `composer.json` file.
 
-`"graham-campbell/laravel-passwd": "dev-master"`
+`"graham-campbell/passwd": "dev-master"`
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
