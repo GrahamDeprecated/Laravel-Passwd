@@ -50,7 +50,7 @@ Once Passwd is installed, you need to register the service provider. Open up `ap
 
 You can register the Passwd facade in the `aliases` key of your `app/config/app.php` file if you like.
 
-`'Passwd' => 'GrahamCampbell\Passwd\Facade\Passwd'`
+`'Passwd' => 'GrahamCampbell\Passwd\Facades\Passwd'`
 
 
 ## Updating Your Fork
