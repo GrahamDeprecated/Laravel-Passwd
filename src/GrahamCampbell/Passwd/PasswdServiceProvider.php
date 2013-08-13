@@ -27,7 +27,7 @@ class PasswdServiceProvider extends ServiceProvider {
      */
     public function register() {
         $this->app['passwd'] = $this->app->share(function($app) {
-            return new GrahamCampbell\Passwd\Classes\Passwd;
+            return new Classes\Passwd;
         });
     }
 
