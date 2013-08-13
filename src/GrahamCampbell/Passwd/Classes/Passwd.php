@@ -2,6 +2,11 @@
 
 class Passwd {
 
+    /**
+     * Get a new random password.
+     *
+     * @return string
+     */
     public function generate($length = 9, $strength = 4) {
         $vowels = 'aeiouy';
         $consonants = 'bcdfghjklmnpqrstvwxz';
