@@ -41,7 +41,7 @@ Laravel Passwd Is A Simple Password Generator For [Laravel 4](http://laravel.com
 
 Please check the system requirements before installing Laravel Passwd.  
 
-To get the latest version of Passwd, simply require it in your `composer.json` file.
+To get the latest version of Laravel Passwd, simply require it in your `composer.json` file.
 
 `"graham-campbell/passwd": "dev-master"`
 
