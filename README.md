@@ -2,15 +2,11 @@ Laravel Passwd
 ==============
 
 
-[![Latest Stable Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=master)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
-[![Latest Unstable Version](https://poser.pugx.org/graham-campbell/passwd/v/unstable.png)](https://packagist.org/packages/graham-campbell/passwd)
-[![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=develop)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
+[![Latest Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Total Downloads](https://poser.pugx.org/graham-campbell/passwd/downloads.png)](https://packagist.org/packages/graham-campbell/passwd)
-[![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd.png)](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd)
-
-
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GrahamCampbell/laravel-passwd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd.png)](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd)
 
 
 Copyright © [Graham Campbell](https://github.com/GrahamCampbell) 2013  
