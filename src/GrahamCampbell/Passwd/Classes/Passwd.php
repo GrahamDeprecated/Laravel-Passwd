@@ -3,8 +3,10 @@
 class Passwd {
 
     /**
-     * Get a new random password.
+     * Generate a new random password.
      *
+     * @param  int     $length
+     * @param  int     $strength
      * @return string
      */
     public function generate($length = 9, $strength = 4) {
