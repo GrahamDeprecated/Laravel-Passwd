@@ -2,10 +2,11 @@ Laravel Passwd
 ==============
 
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GrahamCampbell/laravel-passwd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=master)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
 [![Latest Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Total Downloads](https://poser.pugx.org/graham-campbell/passwd/downloads.png)](https://packagist.org/packages/graham-campbell/passwd)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GrahamCampbell/laravel-passwd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd/badges/quality-score.png?s=e388e17e6a7baae31b5cd7ced1d71c9eb2f6e926)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd)
 [![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd.png)](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd)
 
 
@@ -21,6 +22,7 @@ Laravel Passwd is a simple password generator for [Laravel 4](http://laravel.com
 
 * Laravel Passwd was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell).  
 * Laravel Passwd uses [Travis CI](https://travis-ci.org/GrahamCampbell/Laravel-Passwd) to run tests to check if it's working as it should.  
+* Laravel Passwd uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd) to run additional tests and checks.  
 * Laravel Passwd uses [Composer](https://getcomposer.org) to load and manage dependencies.  
 * Laravel Passwd provides a [change log](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Passwd/releases), and a [wiki](https://github.com/GrahamCampbell/Laravel-Passwd/wiki).  
 * Laravel Passwd is licensed under the MIT, available [here](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md).  
