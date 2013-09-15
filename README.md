@@ -2,7 +2,7 @@ Laravel Passwd
 ==============
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GrahamCampbell/laravel-passwd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GrahamCampbell/Laravel-Passwd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=master)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
 [![Latest Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Total Downloads](https://poser.pugx.org/graham-campbell/passwd/downloads.png)](https://packagist.org/packages/graham-campbell/passwd)
