@@ -20,41 +20,37 @@
  * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
 
+use Illuminate\Support\Str;
+
 class Passwd {
 
     /**
      * Generate a new random password.
      *
-     * @param  int     $length
-     * @param  int     $strength
+     * @param  int  $length
      * @return string
      */
-    public function generate($length = 9, $strength = 4) {
-        $vowels = 'aeiouy';
-        $consonants = 'bcdfghjklmnpqrstvwxz';
-        if ($strength & 1) {
-            $consonants .= 'BCDFGHJKLMNPQRSTVWXZ';
-        }
-        if ($strength & 2) {
-            $vowels .= "AEIOUY";
-        }
-        if ($strength & 4) {
-            $consonants .= '23456789';
-        }
-        if ($strength & 8) {
-            $consonants .= '@#$%';
+    public function generate($length = 16) {
+        $password = '';
+
+        $fp = @fopen('/dev/urandom','rb');
+        if ($fp !== FALSE) {
+            $password .= @fread($fp,$length);
+            @fclose($fp);
         }
 
-        $password = '';
-        $alt = time() % 2;
-        for ($i = 0; $i < $length; $i++) {
-            if ($alt == 1) {
-                $password .= $consonants[(rand() % strlen($consonants))];
-                $alt = 0;
-            } else {
-                $password .= $vowels[(rand() % strlen($vowels))];
-                $alt = 1;
-            }
+        if (@class_exists('COM')) {
+            try {
+                $CAPI_Util = new COM('CAPICOM.Utilities.1');
+                $password .= $CAPI_Util->GetRandom($length,0);
+                if ($password) {
+                    $password = md5($password, true);
+                }
+            } catch (Exception $ex) {}
+        }
+
+        if (strlen($password) < $length) {
+            $password = Str::random($length);
         }
 
         return $password;
