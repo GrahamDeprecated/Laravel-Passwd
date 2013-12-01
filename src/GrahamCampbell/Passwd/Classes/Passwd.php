@@ -55,7 +55,7 @@ class Passwd {
             $password = Str::random($length);
         }
 
-        return utf8_encode($password);
+        return (string)utf8_encode($password);
     }
 
     protected function limit($bytes, $length) {
