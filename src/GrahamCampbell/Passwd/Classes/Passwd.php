@@ -33,45 +33,32 @@ class Passwd {
     public function generate($length = 16) {
         $password = '';
 
-        while (strlen($password) !== $length) {
-            $password .= preg_match('/[^a-zA-Z0-9\.]/', $this->random(($length - strlen($password)) * 2));
-            if (strlen($password) > $length) {
-                $password = substr($password, 0, $length);
-            }
-        }
-
-        return $password;
-    }
-
-    /**
-     * Generate a new random string.
-     *
-     * @param  int  $length
-     * @return string
-     */
-    protected function random($length) {
-        $string = '';
-
         $fp = @fopen('/dev/urandom','rb');
-        if ($fp !== FALSE) {
-            $string .= @fread($fp,$length);
+        if ($fp !== false) {
+            $password .= @fread($fp, $length * 2);
             @fclose($fp);
+            $password = $this->limit($password, $length);
         }
 
         if (@class_exists('COM')) {
             try {
                 $CAPI_Util = new COM('CAPICOM.Utilities.1');
-                $string .= $CAPI_Util->GetRandom($length, 0);
-                if ($string) {
-                    $string = md5($string, true);
+                $password .= $CAPI_Util->GetRandom($length * 2, 0);
+                if ($password) {
+                    $password = md5($password, true);
                 }
+                $password = $this->limit($password, $length);
             } catch (Exception $ex) {}
         }
 
-        if (strlen($string) < $length) {
-            $string = Str::random($length);
+        if (strlen($password) < $length) {
+            $password = Str::random($length);
         }
 
-        return $string;
+        return utf8_encode($password);
+    }
+
+    protected function limit($bytes, $length) {
+        return substr(str_replace(array('/', '+', '='), '', base64_encode($bytes)), 0, $length);
     }
 }
