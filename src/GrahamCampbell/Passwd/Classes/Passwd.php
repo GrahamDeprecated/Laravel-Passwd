@@ -58,6 +58,14 @@ class Passwd {
         return (string)utf8_encode($password);
     }
 
+
+    /**
+     * Limits the length and content of a string.
+     *
+     * @param  string  $bytes
+     * @param  int     $length
+     * @return string
+     */
     protected function limit($bytes, $length) {
         return substr(str_replace(array('/', '+', '='), '', base64_encode($bytes)), 0, $length);
     }
