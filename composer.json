@@ -22,6 +22,11 @@
             "GrahamCampbell\\Passwd": "src/"
         }
     },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.4-dev"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
