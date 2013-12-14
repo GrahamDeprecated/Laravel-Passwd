@@ -22,7 +22,8 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class PasswdServiceProvider extends ServiceProvider {
+class PasswdServiceProvider extends ServiceProvider
+{
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -36,7 +37,8 @@ class PasswdServiceProvider extends ServiceProvider {
      *
      * @return void
      */
-    public function boot() {
+    public function boot()
+    {
         $this->package('graham-campbell/passwd');
     }
 
@@ -45,8 +47,9 @@ class PasswdServiceProvider extends ServiceProvider {
      *
      * @return void
      */
-    public function register() {
-        $this->app['passwd'] = $this->app->share(function($app) {
+    public function register()
+    {
+        $this->app['passwd'] = $this->app->share(function ($app) {
             return new Classes\Passwd;
         });
     }
@@ -56,7 +59,8 @@ class PasswdServiceProvider extends ServiceProvider {
      *
      * @return array
      */
-    public function provides() {
+    public function provides()
+    {
         return array('passwd');
     }
 }

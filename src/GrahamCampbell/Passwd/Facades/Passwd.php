@@ -22,13 +22,16 @@
 
 use Illuminate\Support\Facades\Facade;
 
-class Passwd extends Facade {
+class Passwd extends Facade
+{
 
     /**
      * Get the registered name of the component.
      *
      * @return string
      */
-    protected static function getFacadeAccessor() { return 'passwd'; }
-
+    protected static function getFacadeAccessor()
+    {
+        return 'passwd';
+    }
 }

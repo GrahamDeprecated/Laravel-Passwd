@@ -22,7 +22,8 @@
 
 use Illuminate\Support\Str;
 
-class Passwd {
+class Passwd
+{
 
     /**
      * Generate a new random password.
@@ -30,7 +31,8 @@ class Passwd {
      * @param  int  $length
      * @return string
      */
-    public function generate($length = 16) {
+    public function generate($length = 16)
+    {
         $password = '';
 
         $fp = @fopen('/dev/urandom','rb');
@@ -66,7 +68,8 @@ class Passwd {
      * @param  int     $length
      * @return string
      */
-    protected function limit($bytes, $length) {
+    protected function limit($bytes, $length)
+    {
         return substr(str_replace(array('/', '+', '='), '', base64_encode($bytes)), 0, $length);
     }
 }
