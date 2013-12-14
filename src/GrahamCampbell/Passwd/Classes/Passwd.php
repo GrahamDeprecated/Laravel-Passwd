@@ -33,14 +33,53 @@ class Passwd
      */
     public function generate($length = 16)
     {
+        if (DIRECTORY_SEPARATOR == '/') {
+            // if is linux, use the linux generator
+            $password = $this->linux($length);
+        } elseif (DIRECTORY_SEPARATOR == '\\') {
+            // if is windows, use the windows generator
+            $password = $this->windows($length);
+        }
+
+        if (strlen($password) < $length) {
+            // fall back to laravel random generator
+            $password = Str::random($length);
+        } else {
+            // clean up the password
+            $password = $this->limit($password, $length);
+        }
+
+        return (string)utf8_encode($password);
+    }
+
+    /**
+     * Generate random bytes on linux
+     *
+     * @param  int  $length
+     * @return string
+     */
+    protected function linux($length)
+    {
         $password = '';
 
-        $fp = @fopen('/dev/urandom','rb');
+        $fp = @fopen('/dev/urandom', 'rb');
         if ($fp !== false) {
             $password .= @fread($fp, $length * 2);
             @fclose($fp);
-            $password = $this->limit($password, $length);
         }
+
+        return $password;
+    }
+
+    /**
+     * Generate random bytes on windows
+     *
+     * @param  int  $length
+     * @return string
+     */
+    protected function windows($length)
+    {
+        $password = '';
 
         if (@class_exists('COM')) {
             try {
@@ -49,17 +88,13 @@ class Passwd
                 if ($password) {
                     $password = md5($password, true);
                 }
-                $password = $this->limit($password, $length);
-            } catch (Exception $ex) {}
+            } catch (Exception $e) {
+                $password = '';
+            }
         }
 
-        if (strlen($password) < $length) {
-            $password = Str::random($length);
-        }
-
-        return (string)utf8_encode($password);
+        return $password;
     }
-
 
     /**
      * Limits the length and content of a string.
