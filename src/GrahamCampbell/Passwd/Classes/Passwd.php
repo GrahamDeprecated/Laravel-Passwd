@@ -24,7 +24,6 @@ use Illuminate\Support\Str;
 
 class Passwd
 {
-
     /**
      * Generate a new random password.
      *
@@ -49,7 +48,7 @@ class Passwd
             $password = $this->limit($password, $length);
         }
 
-        return (string)utf8_encode($password);
+        return (string) utf8_encode($password);
     }
 
     /**

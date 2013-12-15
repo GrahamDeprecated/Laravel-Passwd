@@ -24,7 +24,6 @@ use Illuminate\Support\Facades\Facade;
 
 class Passwd extends Facade
 {
-
     /**
      * Get the registered name of the component.
      *
