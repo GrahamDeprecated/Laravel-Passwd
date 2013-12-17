@@ -3,10 +3,10 @@ Laravel Passwd
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GrahamCampbell/Laravel-Passwd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=master)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
-[![Latest Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
-[![Total Downloads](https://poser.pugx.org/graham-campbell/passwd/downloads.png)](https://packagist.org/packages/graham-campbell/passwd)
+[![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=develop)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
+[![Coverage Status](https://coveralls.io/repos/GrahamCampbell/Laravel-Passwd/badge.png?branch=develop)](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd/badges/quality-score.png?s=e388e17e6a7baae31b5cd7ced1d71c9eb2f6e926)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd)
+[![Latest Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd.png)](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd)
 
 
@@ -16,10 +16,10 @@ Laravel Passwd is a simple password generator for [Laravel 4.1](http://laravel.c
 
 * Laravel Passwd was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell).  
 * Laravel Passwd uses [Travis CI](https://travis-ci.org/GrahamCampbell/Laravel-Passwd) to run tests to check if it's working as it should.  
-* Laravel Passwd uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd) to run additional tests and checks.  
+* Laravel Passwd uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd) and [Coveralls](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd) to run additional tests and checks.  
 * Laravel Passwd uses [Composer](https://getcomposer.org) to load and manage dependencies.  
-* Laravel Passwd provides a [change log](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Passwd/releases), and a [wiki](https://github.com/GrahamCampbell/Laravel-Passwd/wiki).  
-* Laravel Passwd is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md).  
+* Laravel Passwd provides a [change log](https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Passwd/releases), and a [wiki](https://github.com/GrahamCampbell/Laravel-Passwd/wiki).  
+* Laravel Passwd is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/LICENSE.md).  
 
 
 ## System Requirements
