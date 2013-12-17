@@ -24,7 +24,7 @@ Laravel Passwd is a simple password generator for [Laravel 4.1](http://laravel.c
 
 ## System Requirements
 
-* PHP 5.4.7+ or PHP 5.5+ is required.
+* PHP 5.4.7+ or PHP 5.5+ is required.  
 * You will need [Laravel 4.1](http://laravel.com) because this package is designed for it.  
 * You will need [Composer](https://getcomposer.org) installed to load the dependencies of Laravel Passwd.  
 
@@ -33,19 +33,27 @@ Laravel Passwd is a simple password generator for [Laravel 4.1](http://laravel.c
 
 Please check the system requirements before installing Laravel Passwd.  
 
-To get the latest version of Laravel Passwd, simply require it in your `composer.json` file.
+To get the latest version of Laravel Passwd, simply require it in your `composer.json` file.  
 
-`"graham-campbell/passwd": "dev-master"`
+`"graham-campbell/passwd": "dev-master"`  
 
-You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
+You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.  
 
-Once Laravel Passwd is installed, you need to register the service provider. Open up `app/config/app.php` and add the following to the `providers` key.
+Once Laravel Passwd is installed, you need to register the service provider. Open up `app/config/app.php` and add the following to the `providers` key.  
 
-`'GrahamCampbell\Passwd\PasswdServiceProvider'`
+`'GrahamCampbell\Passwd\PasswdServiceProvider'`  
 
-You can register the Passwd facade in the `aliases` key of your `app/config/app.php` file if you like.
+You can register the Passwd facade in the `aliases` key of your `app/config/app.php` file if you like.  
 
-`'Passwd' => 'GrahamCampbell\Passwd\Facades\Passwd'`
+`'Passwd' => 'GrahamCampbell\Passwd\Facades\Passwd'`  
+
+
+## Usage
+
+There is currently no usage documentation besides the [API Documentation](http://grahamcampbell.github.io/Laravel-Passwd
+) for Laravel Passwd.  
+
+You may see an example of implementation in [CMS Core](https://github.com/GrahamCampbell/CMS-Core).  
 
 
 ## Updating Your Fork
