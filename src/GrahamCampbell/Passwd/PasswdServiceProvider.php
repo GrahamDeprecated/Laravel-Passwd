@@ -1,4 +1,4 @@
-<?php namespace GrahamCampbell\Passwd;
+<?php
 
 /**
  * This file is part of Laravel Passwd by Graham Campbell.
@@ -12,16 +12,21 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
- * @package    Laravel-Passwd
- * @author     Graham Campbell
- * @license    Apache License
- * @copyright  Copyright 2013 Graham Campbell
- * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
+
+namespace GrahamCampbell\Passwd;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * This is the passwd service provider class.
+ *
+ * @package    Laravel-Passwd
+ * @author     Graham Campbell
+ * @copyright  Copyright 2013 Graham Campbell
+ * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/LICENSE.md
+ * @link       https://github.com/GrahamCampbell/Laravel-Passwd
+ */
 class PasswdServiceProvider extends ServiceProvider
 {
     /**
