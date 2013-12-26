@@ -75,6 +75,8 @@ class PasswdServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return array('passwd');
+        return array(
+            'passwd'
+        );
     }
 }
