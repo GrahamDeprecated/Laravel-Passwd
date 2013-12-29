@@ -2,7 +2,7 @@
     "name": "graham-campbell/passwd",
     "description": "Passwd Is A Simple Password Generator For Laravel 4.1",
     "keywords": ["laravel", "framework", "password generator", "password", "generator", "Passwd", "Laravel Passwd", "Laravel-Passwd", "Graham Campbell", "GrahamCampbell"],
-    "license": "Apache License 2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Graham Campbell",
