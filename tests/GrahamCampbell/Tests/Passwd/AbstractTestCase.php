@@ -23,7 +23,7 @@ use GrahamCampbell\TestBench\Classes\AbstractLaravelTestCase as TestCase;
  *
  * @package    Laravel-Passwd
  * @author     Graham Campbell
- * @copyright  Copyright 2013 Graham Campbell
+ * @copyright  Copyright 2013-2014 Graham Campbell
  * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
