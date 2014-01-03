@@ -10,6 +10,11 @@ Laravel Passwd
 [![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd.png)](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd)
 
 
+## WARNING
+
+#### This package will depreciated soon. The final release will be V0.4 Alpha. There is no longer any need for this package because Laravel now has, and has had for a while, a more robust random string generator.
+
+
 ## What Is Laravel Passwd?
 
 Laravel Passwd is a simple password generator for [Laravel 4.1](http://laravel.com).  
