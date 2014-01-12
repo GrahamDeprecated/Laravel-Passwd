@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\Tests\Passwd\Facades;
+namespace GrahamCampbell\Tests\Passwd\Classes;
 
-use GrahamCampbell\Tests\Passwd\AbstractTestCase;
-use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
+use GrahamCampbell\Passwd\Classes\Passwd;
+use GrahamCampbell\TestBench\Classes\AbstractTestCase;
 
 /**
- * This is the abstract facade test case class.
+ * This is the htmlmin test class.
  *
  * @package    Laravel-Passwd
  * @author     Graham Campbell
@@ -28,7 +28,23 @@ use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
  * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
-abstract class AbstractFacadeTestCase extends AbstractTestCase
+class PasswdTest extends AbstractTestCase
 {
-    use FacadeTestCaseTrait;
+    public function testAll()
+    {
+        // this test is rubbish for many reasons
+        // one issue is we can't test windows specific operations on travis
+        // this test is here is a very basic check that the class works
+
+        $passwd = $this->getPasswd();
+
+        $return = $passwd->generate();
+
+        $this->assertEquals(16, strlen($return));
+    }
+
+    protected function getPasswd()
+    {
+        return new Passwd();
+    }
 }

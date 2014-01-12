@@ -16,8 +16,11 @@
 
 namespace GrahamCampbell\Tests\Passwd\Facades;
 
+use GrahamCampbell\Tests\Passwd\AbstractTestCase;
+use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
+
 /**
- * This is the passwd facade test case class.
+ * This is the passwd facade test class.
  *
  * @package    Laravel-Passwd
  * @author     Graham Campbell
@@ -25,8 +28,10 @@ namespace GrahamCampbell\Tests\Passwd\Facades;
  * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
-class PasswdTest extends AbstractFacadeTestCase
+class PasswdTest extends AbstractTestCase
 {
+    use FacadeTestCaseTrait;
+
     /**
      * Get the facade accessor.
      *
