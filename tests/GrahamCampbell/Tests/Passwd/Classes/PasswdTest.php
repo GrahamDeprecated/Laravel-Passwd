@@ -20,7 +20,7 @@ use GrahamCampbell\Passwd\Classes\Passwd;
 use GrahamCampbell\TestBench\Classes\AbstractTestCase;
 
 /**
- * This is the htmlmin test class.
+ * This is the passwd test class.
  *
  * @package    Laravel-Passwd
  * @author     Graham Campbell
@@ -34,7 +34,7 @@ class PasswdTest extends AbstractTestCase
     {
         // this test is rubbish for many reasons
         // one issue is we can't test windows specific operations on travis
-        // this test is here is a very basic check that the class works
+        // this test is here as a very basic check that the class works
 
         $passwd = $this->getPasswd();
 
