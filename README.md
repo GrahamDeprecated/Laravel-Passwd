@@ -58,7 +58,7 @@ You can register the Passwd facade in the `aliases` key of your `app/config/app.
 There is currently no usage documentation besides the [API Documentation](http://grahamcampbell.github.io/Laravel-Passwd
 ) for Laravel Passwd.  
 
-You may see an example of implementation in [CMS Core](https://github.com/GrahamCampbell/CMS-Core).  
+You may see an example of implementation in [Laravel Credentials](https://github.com/GrahamCampbell/Laravel-Credentials).  
 
 
 ## Updating Your Fork
