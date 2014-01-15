@@ -40,7 +40,7 @@ Please check the system requirements before installing Laravel Passwd.
 
 To get the latest version of Laravel Passwd, simply require it in your `composer.json` file.  
 
-`"graham-campbell/passwd": "dev-master"`  
+`"graham-campbell/passwd": "*"`  
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.  
 
