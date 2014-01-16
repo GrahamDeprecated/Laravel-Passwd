@@ -3,8 +3,8 @@ Laravel Passwd
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/GrahamCampbell/Laravel-Passwd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png?branch=develop)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
-[![Coverage Status](https://coveralls.io/repos/GrahamCampbell/Laravel-Passwd/badge.png?branch=develop)](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd)
+[![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
+[![Coverage Status](https://coveralls.io/repos/GrahamCampbell/Laravel-Passwd/badge.png)](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd/badges/quality-score.png?s=e388e17e6a7baae31b5cd7ced1d71c9eb2f6e926)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd)
 [![Latest Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
 [![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd.png)](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd)
@@ -24,7 +24,7 @@ Laravel Passwd is a simple password generator for [Laravel 4.1](http://laravel.c
 * Laravel Passwd uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd) and [Coveralls](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd) to run additional tests and checks.  
 * Laravel Passwd uses [Composer](https://getcomposer.org) to load and manage dependencies.  
 * Laravel Passwd provides a [change log](https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Passwd/releases), and a [wiki](https://github.com/GrahamCampbell/Laravel-Passwd/wiki).  
-* Laravel Passwd is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/LICENSE.md).  
+* Laravel Passwd is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md).  
 
 
 ## System Requirements
@@ -74,7 +74,7 @@ The first command is only necessary the first time. If you have issues merging, 
 
 You can then update the branch:  
 
-    git pull --rebase upstream develop
+    git pull --rebase upstream master
     git push --force origin <branch_name>
 
 Once it is set up, run `git mergetool`. Once all conflicts are fixed, run `git rebase --continue`, and `git push --force origin <branch_name>`.  
@@ -84,9 +84,8 @@ Once it is set up, run `git mergetool`. Once all conflicts are fixed, run `git r
 
 Please submit pull requests against the develop branch.  
 
-* Any pull requests made against the master branch will be closed immediately.  
-* If you plan to fix a bug, please create a branch called `fix-`, followed by an appropriate name.  
-* If you plan to add a feature, please create a branch called `feature-`, followed by an appropriate name.  
+* Bug fixes shouldn't be sent to the master branch unless they fix features that exist only in the upcoming release.  
+* Before sending a pull request for a new feature, you should first create an issue with [Proposal] in the title.  
 * Please follow the [PSR-2 Coding Style](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) and [PHP-FIG Naming Conventions](https://github.com/php-fig/fig-standards/blob/master/bylaws/002-psr-naming-conventions.md).  
 
 

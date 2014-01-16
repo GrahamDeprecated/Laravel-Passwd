@@ -24,7 +24,7 @@ use Illuminate\Support\ServiceProvider;
  * @package    Laravel-Passwd
  * @author     Graham Campbell
  * @copyright  Copyright 2013-2014 Graham Campbell
- * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/develop/LICENSE.md
+ * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
 class PasswdServiceProvider extends ServiceProvider
