@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\Passwd;
+namespace GrahamCampbell\Tests\Passwd\Facades;
 
-use Illuminate\Support\ServiceProvider;
+use GrahamCampbell\Tests\Passwd\AbstractTestCase;
+use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
 
 /**
- * This is the passwd service provider class.
+ * This is the passwd facade test class.
  *
  * @package    Laravel-Passwd
  * @author     Graham Campbell
@@ -27,56 +28,37 @@ use Illuminate\Support\ServiceProvider;
  * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
-class PasswdServiceProvider extends ServiceProvider
+class PasswdTest extends AbstractTestCase
 {
-    /**
-     * Indicates if loading of the provider is deferred.
-     *
-     * @var bool
-     */
-    protected $defer = false;
+    use FacadeTestCaseTrait;
 
     /**
-     * Bootstrap the application events.
+     * Get the facade accessor.
      *
-     * @return void
+     * @return string
      */
-    public function boot()
+    protected function getFacadeAccessor()
     {
-        $this->package('graham-campbell/passwd');
+        return 'passwd';
     }
 
     /**
-     * Register the service provider.
+     * Get the facade class.
      *
-     * @return void
+     * @return string
      */
-    public function register()
+    protected function getFacadeClass()
     {
-        $this->registerPasswd();
+        return 'GrahamCampbell\Passwd\Facades\Passwd';
     }
 
     /**
-     * Register the passwd class.
+     * Get the facade route.
      *
-     * @return void
+     * @return string
      */
-    protected function registerPasswd()
+    protected function getFacadeRoot()
     {
-        $this->app->bindShared('passwd', function ($app) {
-            return new Classes\Passwd();
-        });
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return array(
-            'passwd'
-        );
+        return 'GrahamCampbell\Passwd\Classes\Passwd';
     }
 }

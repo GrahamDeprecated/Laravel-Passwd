@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\Passwd\Facades;
+namespace GrahamCampbell\Tests\Passwd;
 
-use Illuminate\Support\Facades\Facade;
+use GrahamCampbell\TestBench\Traits\ServiceProviderTestCaseTrait;
 
 /**
- * This is the passwd facade class.
+ * This is the service provider test class.
  *
  * @package    Laravel-Passwd
  * @author     Graham Campbell
@@ -27,15 +27,7 @@ use Illuminate\Support\Facades\Facade;
  * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
-class Passwd extends Facade
+class ServiceProviderTest extends AbstractTestCase
 {
-    /**
-     * Get the registered name of the component.
-     *
-     * @return string
-     */
-    protected static function getFacadeAccessor()
-    {
-        return 'passwd';
-    }
+    use ServiceProviderTestCaseTrait;
 }

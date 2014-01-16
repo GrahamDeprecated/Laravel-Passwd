@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-namespace GrahamCampbell\Passwd\Facades;
+namespace GrahamCampbell\Tests\Passwd\Classes;
 
-use Illuminate\Support\Facades\Facade;
+use GrahamCampbell\Passwd\Classes\Passwd;
+use GrahamCampbell\TestBench\Classes\AbstractTestCase;
 
 /**
- * This is the passwd facade class.
+ * This is the passwd test class.
  *
  * @package    Laravel-Passwd
  * @author     Graham Campbell
@@ -27,15 +28,23 @@ use Illuminate\Support\Facades\Facade;
  * @license    https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md
  * @link       https://github.com/GrahamCampbell/Laravel-Passwd
  */
-class Passwd extends Facade
+class PasswdTest extends AbstractTestCase
 {
-    /**
-     * Get the registered name of the component.
-     *
-     * @return string
-     */
-    protected static function getFacadeAccessor()
+    public function testAll()
     {
-        return 'passwd';
+        // this test is rubbish for many reasons
+        // one issue is we can't test windows specific operations on travis
+        // this test is here as a very basic check that the class works
+
+        $passwd = $this->getPasswd();
+
+        $return = $passwd->generate();
+
+        $this->assertEquals(16, strlen($return));
+    }
+
+    protected function getPasswd()
+    {
+        return new Passwd();
     }
 }
