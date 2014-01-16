@@ -87,12 +87,12 @@ class Passwd
 
         if (@class_exists('COM')) {
             try {
-                $CAPI_Util = new COM('CAPICOM.Utilities.1');
+                $CAPI_Util = new \COM('CAPICOM.Utilities.1');
                 $password .= $CAPI_Util->GetRandom($length * 2, 0);
                 if ($password) {
                     $password = md5($password, true);
                 }
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 $password = '';
             }
         }
