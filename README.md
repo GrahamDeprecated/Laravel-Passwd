@@ -6,8 +6,8 @@ Laravel Passwd
 [![Build Status](https://travis-ci.org/GrahamCampbell/Laravel-Passwd.png)](https://travis-ci.org/GrahamCampbell/Laravel-Passwd)
 [![Coverage Status](https://coveralls.io/repos/GrahamCampbell/Laravel-Passwd/badge.png)](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd/badges/quality-score.png?s=e388e17e6a7baae31b5cd7ced1d71c9eb2f6e926)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/8a3594ff-698c-4fc3-b82c-37ed6e7cc145/mini.png)](https://insight.sensiolabs.com/projects/8a3594ff-698c-4fc3-b82c-37ed6e7cc145)
 [![Latest Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
-[![Still Maintained](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd.png)](http://stillmaintained.com/GrahamCampbell/Laravel-Passwd)
 
 
 ## WARNING
@@ -23,7 +23,7 @@ Laravel Passwd is a simple password generator for [Laravel 4.1](http://laravel.c
 * Laravel Passwd uses [Travis CI](https://travis-ci.org/GrahamCampbell/Laravel-Passwd) to run tests to check if it's working as it should.  
 * Laravel Passwd uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd) and [Coveralls](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd) to run additional tests and checks.  
 * Laravel Passwd uses [Composer](https://getcomposer.org) to load and manage dependencies.  
-* Laravel Passwd provides a [change log](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Passwd/releases), and a [wiki](https://github.com/GrahamCampbell/Laravel-Passwd/wiki).  
+* Laravel Passwd provides a [change log](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Passwd/releases), and [api docs](http://grahamcampbell.github.io/Laravel-Passwd).  
 * Laravel Passwd is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md).  
 
 
@@ -84,7 +84,7 @@ Once it is set up, run `git mergetool`. Once all conflicts are fixed, run `git r
 
 Please review these guidelines before submitting any pull requests.  
 
-* Bug fixes shouldn't be sent to the master branch unless they fix features that exist only in the upcoming release.  
+* When submitting bug fixes, check if a maintenance branch exists for an older series, then pull against that older branch if the bug is present in it.  
 * Before sending a pull request for a new feature, you should first create an issue with [Proposal] in the title.  
 * Please follow the [PSR-2 Coding Style](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) and [PHP-FIG Naming Conventions](https://github.com/php-fig/fig-standards/blob/master/bylaws/002-psr-naming-conventions.md).  
 
