@@ -20,8 +20,8 @@ Laravel Passwd
 Laravel Passwd is a simple password generator for [Laravel 4.1](http://laravel.com).  
 
 * Laravel Passwd was created by, and is maintained by [Graham Campbell](https://github.com/GrahamCampbell).  
-* Laravel Passwd uses [Travis CI](https://travis-ci.org/GrahamCampbell/Laravel-Passwd) to run tests to check if it's working as it should.  
-* Laravel Passwd uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd) and [Coveralls](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd) to run additional tests and checks.  
+* Laravel Passwd uses [Travis CI](https://travis-ci.org/GrahamCampbell/Laravel-Passwd) with [Coveralls](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd) to check everything is working.  
+* Laravel Passwd uses [Scrutinizer CI](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd) and [SensioLabsInsight](https://insight.sensiolabs.com/projects/8a3594ff-698c-4fc3-b82c-37ed6e7cc145) to run additional checks.  
 * Laravel Passwd uses [Composer](https://getcomposer.org) to load and manage dependencies.  
 * Laravel Passwd provides a [change log](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/CHANGELOG.md), [releases](https://github.com/GrahamCampbell/Laravel-Passwd/releases), and [api docs](http://grahamcampbell.github.io/Laravel-Passwd).  
 * Laravel Passwd is licensed under the Apache License, available [here](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md).  
