@@ -7,6 +7,7 @@ Laravel Passwd
 [![Coverage Status](https://coveralls.io/repos/GrahamCampbell/Laravel-Passwd/badge.png)](https://coveralls.io/r/GrahamCampbell/Laravel-Passwd)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd/badges/quality-score.png?s=e388e17e6a7baae31b5cd7ced1d71c9eb2f6e926)](https://scrutinizer-ci.com/g/GrahamCampbell/Laravel-Passwd)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/8a3594ff-698c-4fc3-b82c-37ed6e7cc145/mini.png)](https://insight.sensiolabs.com/projects/8a3594ff-698c-4fc3-b82c-37ed6e7cc145)
+[![Software License](https://poser.pugx.org/graham-campbell/passwd/license.png)](https://github.com/GrahamCampbell/Laravel-Passwd/blob/master/LICENSE.md)
 [![Latest Version](https://poser.pugx.org/graham-campbell/passwd/v/stable.png)](https://packagist.org/packages/graham-campbell/passwd)
 
 
