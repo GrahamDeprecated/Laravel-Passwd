@@ -47,11 +47,11 @@ You'll then need to run `composer install` or `composer update` to download it a
 
 Once Laravel Passwd is installed, you need to register the service provider. Open up `app/config/app.php` and add the following to the `providers` key.
 
-`'GrahamCampbell\Passwd\PasswdServiceProvider'`
+* `'GrahamCampbell\Passwd\PasswdServiceProvider'`
 
 You can register the Passwd facade in the `aliases` key of your `app/config/app.php` file if you like.
 
-`'Passwd' => 'GrahamCampbell\Passwd\Facades\Passwd'`
+* `'Passwd' => 'GrahamCampbell\Passwd\Facades\Passwd'`
 
 
 ## Configuration
