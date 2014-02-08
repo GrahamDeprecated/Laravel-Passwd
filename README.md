@@ -13,7 +13,7 @@ Laravel Passwd
 
 ## WARNING
 
-#### This package will depreciated soon. The final release will be V0.4 Alpha. There is no longer any need for this package because Laravel now has, and has had for a while, a more robust random string generator.
+#### This package is depreciated, and is no longer maintained.
 
 
 ## What Is Laravel Passwd?
@@ -39,11 +39,7 @@ Laravel Passwd is a simple password generator for [Laravel 4.1](http://laravel.c
 
 Please check the system requirements before installing Laravel Passwd.
 
-To get the latest version of Laravel Passwd, simply require it in your `composer.json` file.
-
-`"graham-campbell/passwd": "*"`
-
-You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
+To get the latest version of Laravel Passwd, simply require `"graham-campbell/passwd": "0.4.*@alpha"` in your `composer.json` file. You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
 
 Once Laravel Passwd is installed, you need to register the service provider. Open up `app/config/app.php` and add the following to the `providers` key.
 
