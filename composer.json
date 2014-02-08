@@ -40,9 +40,9 @@
         "graham-campbell/testbench": "0.2.*"
     },
     "autoload": {
-        "psr-0": {
-            "GrahamCampbell\\Passwd": "src/",
-            "GrahamCampbell\\Tests\\Passwd": "tests/"
+        "psr-4": {
+            "GrahamCampbell\\Passwd\\": "src/",
+            "GrahamCampbell\\Tests\\Passwd\\": "tests/"
         }
     },
     "extra": {

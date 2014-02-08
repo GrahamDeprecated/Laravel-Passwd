@@ -43,7 +43,7 @@ class PasswdServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->package('graham-campbell/passwd');
+        $this->package('graham-campbell/passwd', 'graham-campbell/passwd', __DIR__);
     }
 
     /**
